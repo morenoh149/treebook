@@ -8,5 +8,11 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   # http://stackoverflow.com/questions/10796092/cant-mass-assign-protected-attributes-first-name-last-name-email-password
   attr_accessible :email, :password, :password_confirmation,
-                  :first_name, :last_name, :profile_name
+                  :first_name, :last_name, :profile_name, :remember_me
+
+  has_many :statuses
+
+  def full_name
+    first_name + " " + last_name
+  end
 end
