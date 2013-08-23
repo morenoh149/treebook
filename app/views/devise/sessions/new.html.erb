@@ -3,21 +3,21 @@
   <div class="col-sm-4">
     <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
 
-    <fieldset>
-      <legend>Sign In</legend>
+      <fieldset>
+        <legend>Sign In</legend>
+    
+        <%= f.input :email %>
+        <%= f.input :password %>
+    
+        <% if devise_mapping.rememberable? -%>
+          <div><%= f.input :remember_me, as: :boolean %></div>
+        <% end -%>
+    
+        <div><%= f.button :submit, "Sign in" %></div>
+      </fieldset>
+    <% end %>
   
-    <%= f.input :email %>
-    <%= f.input :password %>
-  
-    <% if devise_mapping.rememberable? -%>
-      <div><%= f.input :remember_me, as: :boolean %></div>
-    <% end -%>
-  
-    <div><%= f.button :submit, "Sign in" %></div>
-  </fieldset>
-  <% end %>
-  
-  <%= render "devise/shared/links" %>
+    <%= render "devise/shared/links" %>
   </div>
   <div class="col-sm-8">
     <h2>Signing in is easy and secure</h2>
