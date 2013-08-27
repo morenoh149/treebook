@@ -21,6 +21,9 @@ gem 'jquery-rails'
 
 # TODO restructure app to not use these gems
 gem 'protected_attributes'
+gem 'rails-observers'
+gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
