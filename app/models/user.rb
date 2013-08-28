@@ -11,12 +11,12 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation,
                   :first_name, :last_name, :profile_name, :remember_me
 
-  #validates :first_name, presence: true
-  #validates :last_name, presence: true
-  #validates :profile_name, presence: true, uniqueness: true,
-  #          format: { with: /a-zA-Z-0-9_-/,
-  #                    message: 'Must be formatted correctly.'
-  #}
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :profile_name, presence: true, uniqueness: true,
+            format: { with: /a-zA-Z-0-9_-/,
+                      message: 'Must be formatted correctly.'
+  }
 
   has_many :statuses
 
