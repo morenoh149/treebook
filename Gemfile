@@ -6,7 +6,7 @@ gem 'rails', '4'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'devise'
+gem 'devise', '~> 3'
 gem 'simple_form', github: 'plataformatec/simple_form', branch: 'master'
 
 gem 'sass-rails',   '~> 4'

@@ -126,7 +126,7 @@ DEPENDENCIES
   actionpack-action_caching
   actionpack-page_caching
   coffee-rails (~> 4)
-  devise
+  devise (~> 3)
   jquery-rails
   protected_attributes
   rails (= 4)
