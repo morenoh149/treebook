@@ -7,4 +7,5 @@ this caused me to have to upgrade the 'simple_form' gem to the latest version. S
 * Setup accessible (or protected) attributes for your model [stackoverflow: Can't mass assign](http://stackoverflow.com/questions/10796092/cant-mass-assign-protected-attributes-first-name-last-name-email-password)
 * rails 4 has forced devise to handle parameters at the controller level. This wasn't neccessary when the treehouse videos were made. See [stackoverflow: unpermitted parameters in devise](http://stackoverflow.com/questions/17384289/unpermitted-parameters-adding-new-fields-to-devise-in-rails-4-0)
 And [devise documentation: Strong Parameters](https://github.com/plataformatec/devise#strong-parameters)
-*
+* Testing the profile name: the regular expression used to validate profile name needs '-' to be escaped.
+So we just have to deal with a warning for now.
