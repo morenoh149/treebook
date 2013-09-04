@@ -6,6 +6,8 @@
 
     <fieldset>
       <legend>Edit <%= resource_name.to_s.humanize %></legend>
+      <%= resource.profile_name %>
+
       <%= f.input :email %>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
