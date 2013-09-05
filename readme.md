@@ -11,4 +11,4 @@ And [devise documentation: Strong Parameters](https://github.com/plataformatec/d
 So we just have to deal with a warning for now.
 * deploying to heroku differed: you need to add postgresql to config/database.yml under production #edit 
 turns out heroku automatically generates a new database.yml file with the correct params, I had to do steps outlined in [upgrading rails 3 to 4 for heroku](https://devcenter.heroku.com/articles/rails4)
-*
+* also needed to add 12factor gem so assets are served
