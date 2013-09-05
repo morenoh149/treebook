@@ -1,3 +1,5 @@
+[http://harry-treebook.herokuapp.com/](http://harry-treebook.herokuapp.com/)
+
 # notes going through the ruby courses on treebook circa summer 2013
 * the course was written for rails 3.2
 I had to move to rails 4 since I wanted this app to work moving forward and I knew I would have to learn rails 4 anyway
@@ -12,3 +14,7 @@ So we just have to deal with a warning for now.
 * deploying to heroku differed: you need to add postgresql to config/database.yml under production #edit 
 turns out heroku automatically generates a new database.yml file with the correct params, I had to do steps outlined in [upgrading rails 3 to 4 for heroku](https://devcenter.heroku.com/articles/rails4)
 * also needed to add 12factor gem so assets are served
+
+
+## TODO
+* do not allow users to post as other users
