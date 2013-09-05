@@ -5,12 +5,17 @@ gem 'rails', '4'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'devise', '~> 3'
 gem 'simple_form', github: 'plataformatec/simple_form', branch: 'master'
 
 gem 'sass-rails',   '~> 4'
 gem 'coffee-rails', '~> 4'
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', :platforms => :ruby
