@@ -9,3 +9,5 @@ this caused me to have to upgrade the 'simple_form' gem to the latest version. S
 And [devise documentation: Strong Parameters](https://github.com/plataformatec/devise#strong-parameters)
 * Testing the profile name: the regular expression used to validate profile name needs '-' to be escaped.
 So we just have to deal with a warning for now.
+* deploying to heroku differed: you need to add postgresql to config/database.yml under production
+*
