@@ -57,7 +57,12 @@ class StatusesController < ApplicationController
   # PUT /statuses/1
   # PUT /statuses/1.json
   def update
-    @status = Status.find(params[:id])
+    @status = current_user.statuses.find(params[:id])
+
+    # removes user_id if the status has one, we want to use the id of the current user only
+    if params[:status] && params[:status].has_key?(:user_id)
+      params[:status].delete(:user_id)
+    end
 
     respond_to do |format|
       if @status.update_attributes(params[:status])
