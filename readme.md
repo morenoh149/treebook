@@ -15,6 +15,5 @@ And [devise documentation: Strong Parameters](https://github.com/plataformatec/d
 * the testing directories have changed in rails 4 see [rails 4 changes](https://blog.engineyard.com/2013/rails-4-changes)
 * Testing the profile name: the regular expression used to validate profile name needs '-' to be escaped.
 So we just have to deal with a warning for now.
-* deploying to heroku differed: you need to add postgresql to config/database.yml under production #edit 
-turns out heroku automatically generates a new database.yml file with the correct params, I had to do steps outlined in [upgrading rails 3 to 4 for heroku](https://devcenter.heroku.com/articles/rails4)
+* had to do steps outlined in [upgrading rails 3 to 4 for heroku](https://devcenter.heroku.com/articles/rails4)
 * also needed to add 12factor gem so assets are served
