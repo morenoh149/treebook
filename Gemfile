@@ -14,6 +14,11 @@ gem 'coffee-rails', '~> 4'
 group :development do
   gem 'sqlite3'
 end
+
+group :test do
+  gem 'shoulda'
+end
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
