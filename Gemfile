@@ -7,6 +7,7 @@ gem 'rails', '4'
 
 gem 'devise', '~> 3'
 gem 'simple_form', github: 'plataformatec/simple_form', branch: 'master'
+gem 'state_machine'
 
 gem 'sass-rails',   '~> 4'
 gem 'coffee-rails', '~> 4'

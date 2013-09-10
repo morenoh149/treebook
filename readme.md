@@ -17,3 +17,4 @@ So we just have to deal with a warning for now.
 turns out heroku automatically generates a new database.yml file with the correct params, I had to do steps outlined in [upgrading rails 3 to 4 for heroku](https://devcenter.heroku.com/articles/rails4)
 * also needed to add 12factor gem so assets are served
 * shoulda gem needs to be installed differently [http://serdardogruyol.com/?p=107#comment-4970](http://serdardogruyol.com/?p=107#comment-4970)
+* .all is deprecated, replaced with .load
